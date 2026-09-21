@@ -22,10 +22,10 @@ The goal is to create one simple place where people can search for a person, bra
 | Day | Focus | Status |
 | --- | --- | --- |
 | 0 | Announce the project and define the scope | Complete |
-| 1 | Plan the dashboard and build the foundation | Complete |
-| 2 | Connect live public search | Complete |
-| 3 | Save searches and mentions | Complete |
-| 4 | Add sentiment analysis | In progress |
+| 1 | Plan the dashboard and build the foundation | Planned |
+| 2 | Connect live public search | Planned |
+| 3 | Save searches and mentions | Planned |
+| 4 | Add sentiment analysis | Planned |
 | 5 | Build trend detection | Planned |
 | 6 | Complete the dashboard walkthrough | Planned |
 | 7 | Review, improve, document, and release | Planned |
