@@ -22,7 +22,7 @@ The goal is to create one simple place where people can search for a person, bra
 | Day | Focus | Status |
 | --- | --- | --- |
 | 0 | Announce the project and define the scope | Complete |
-| 1 | Plan the dashboard and build the foundation | Planned |
+| 1 | Plan the dashboard and build the foundation | Complete |
 | 2 | Connect live public search | Planned |
 | 3 | Save searches and mentions | Planned |
 | 4 | Add sentiment analysis | Planned |
@@ -32,15 +32,15 @@ The goal is to create one simple place where people can search for a person, bra
 
 Read the notes for each day in the [seven-day build log](./progress/README.md).
 
-## Technology
+## Technology and planned integrations
 
 - [Next.js](https://nextjs.org/) and TypeScript
 - Server-side platform API routes
 - [Supabase](https://supabase.com/) Postgres for saved searches and mentions
 - AI-powered sentiment analysis
-- [Vercel](https://vercel.com/) for deployment
+- Local development with `npm run dev`
 
-The prototype begins with public data sources that are practical for development. Additional platform integrations depend on their API access, pricing, and policies.
+The Day 1 version uses fictional sample posts to demonstrate the interface. Live search is planned for Day 2. Additional platform integrations depend on their API access, pricing, and policies.
 
 ## Run the project locally
 
@@ -57,7 +57,7 @@ cd Dashboard
 npm install
 ```
 
-### 3. Create the local environment file
+### 3. Create the local environment file when you need an API-backed feature
 
 Copy `.env.example` to `.env.local`:
 
@@ -71,7 +71,7 @@ On Windows PowerShell:
 Copy-Item .env.example .env.local
 ```
 
-Only add credentials for the features you are testing. Never commit `.env.local` or share live API keys.
+Day 1's sample interface needs no API key. Add credentials only for features you are testing. Never commit `.env.local` or share live API keys.
 
 ### 4. Start the development server
 
@@ -84,9 +84,9 @@ Open [http://localhost:3000](http://localhost:3000).
 ## Project structure
 
 ```text
-src/app/          Dashboard pages and server API routes
-src/lib/          Shared server and data utilities
-supabase/         Database migrations
+src/app/          Dashboard and setup pages
+src/lib/          Shared utilities (planned)
+supabase/         Database migrations (planned)
 progress/         Daily challenge notes from Day 0 to Day 7
 .env.example      Safe environment-variable template
 ```
