@@ -1,17 +1,26 @@
 # Day 2 — Live Search
 
-## Goal
+## What I built
 
-Connect the dashboard to live public data and make search functional.
+- Connected the dashboard to public Bluesky posts through a server route.
+- Added search by topic and date range, with up to 25 recent results.
+- Displayed each post's author, date, text, engagement, and original link.
+- Added total mentions and engagement, plus loading, empty, and error states.
 
-## Completed
-
-- [ ] Add completed Day 2 work
+The date filter applies to the recent posts returned by Bluesky; it does not search the entire historical archive. Search results are not saved yet—that is the Day 3 task.
 
 ## Demo
 
-Add the link to the Day 2 post here.
+[Watch the Day 2 landscape video](./Snowlax_Day2_Live_Search.mp4).
 
-## Lessons
+## What I learned
 
-Add the main lesson from Day 2 here.
+Connecting a real source also means handling cases where the source returns no posts or temporarily fails. A clear result state is as important as the happy path.
+
+## Problem I faced
+
+Broad terms can return unrelated posts, and public search results are limited. I will keep improving search quality as the project grows.
+
+## Next
+
+Save searches and mentions so results remain available after refreshing the dashboard.

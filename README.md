@@ -23,7 +23,7 @@ The goal is to create one simple place where people can search for a person, bra
 | --- | --- | --- |
 | 0 | Announce the project and define the scope | Complete |
 | 1 | Plan the dashboard and build the foundation | Complete |
-| 2 | Connect live public search | Planned |
+| 2 | Connect live public search | Complete |
 | 3 | Save searches and mentions | Planned |
 | 4 | Add sentiment analysis | Planned |
 | 5 | Build trend detection | Planned |
@@ -40,7 +40,7 @@ Read the notes for each day in the [seven-day build log](./progress/README.md).
 - AI-powered sentiment analysis
 - Local development with `npm run dev`
 
-The Day 1 version uses fictional sample posts to demonstrate the interface. Live search is planned for Day 2. Additional platform integrations depend on their API access, pricing, and policies.
+Day 2 connects the dashboard to Bluesky's public search endpoint. Searches return up to 25 recent public posts with author, date, engagement, and a link to the original. Results are fetched when you search; saving search history is planned for Day 3. Additional platform integrations depend on their API access, pricing, and policies.
 
 ## Run the project locally
 
@@ -71,7 +71,7 @@ On Windows PowerShell:
 Copy-Item .env.example .env.local
 ```
 
-Day 1's sample interface needs no API key. Add credentials only for features you are testing. Never commit `.env.local` or share live API keys.
+Bluesky public search needs no API key. Add credentials only for later features you are testing. Never commit `.env.local` or share live API keys.
 
 ### 4. Start the development server
 
