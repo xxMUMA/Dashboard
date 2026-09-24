@@ -24,7 +24,7 @@ The goal is to create one simple place where people can search for a person, bra
 | 0 | Announce the project and define the scope | Complete |
 | 1 | Plan the dashboard and build the foundation | Complete |
 | 2 | Connect live public search | Complete |
-| 3 | Save searches and mentions | Planned |
+| 3 | Save searches and mentions | Complete |
 | 4 | Add sentiment analysis | Planned |
 | 5 | Build trend detection | Planned |
 | 6 | Complete the dashboard walkthrough | Planned |
@@ -40,7 +40,7 @@ Read the notes for each day in the [seven-day build log](./progress/README.md).
 - AI-powered sentiment analysis
 - Local development with `npm run dev`
 
-Day 2 connects the dashboard to Bluesky's public search endpoint. Searches return up to 25 recent public posts with author, date, engagement, and a link to the original. Results are fetched when you search; saving search history is planned for Day 3. Additional platform integrations depend on their API access, pricing, and policies.
+Day 2 connected live public search. Day 3 added server-side Supabase storage for searches and mentions, so saved results can be reopened after a page refresh. The dashboard remains a local prototype; some later features in the code are still being tested. Additional platform integrations depend on their API access, pricing, and policies.
 
 ## Run the project locally
 
@@ -71,7 +71,7 @@ On Windows PowerShell:
 Copy-Item .env.example .env.local
 ```
 
-Bluesky public search needs no API key. Add credentials only for later features you are testing. Never commit `.env.local` or share live API keys.
+Bluesky public search needs no API key. To save searches for Day 3, run [`supabase/schema.sql`](./supabase/schema.sql) in your Supabase project's SQL Editor, then set `SUPABASE_URL` and `SUPABASE_SECRET_KEY` in `.env.local`. These values are used only in server code. Add other credentials only for features you are testing. Never commit `.env.local` or share live API keys.
 
 ### 4. Start the development server
 
@@ -84,9 +84,9 @@ Open [http://localhost:3000](http://localhost:3000).
 ## Project structure
 
 ```text
-src/app/          Dashboard and setup pages
-src/lib/          Shared utilities (planned)
-supabase/         Database migrations (planned)
+src/app/          Dashboard pages and server API routes
+src/lib/          Shared server and data utilities
+supabase/         Database schema for saved searches and mentions
 progress/         Daily challenge notes from Day 0 to Day 7
 .env.example      Safe environment-variable template
 ```
