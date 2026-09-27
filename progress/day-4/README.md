@@ -12,7 +12,7 @@ Classify public mentions as positive, neutral, or negative.
 
 ## Demo
 
-The sentiment controls are available on the dashboard after a search returns posts.
+Watch the [Day 4 landscape demo](./Snowlax_Day4_Real_GPT_Sentiment.mp4). It shows a search using real public posts, GPT sentiment labels on result cards, the sentiment overview, and the original posts used to check each label.
 
 ## Lessons
 
