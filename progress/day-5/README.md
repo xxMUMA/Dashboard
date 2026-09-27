@@ -1,17 +1,19 @@
-# Day 5 — Trend Detection
+# Day 5 — Trends and Jev Test
 
 ## Goal
 
-Use stored results to show how mentions, engagement, and sentiment change over time.
+Use saved search snapshots to see how sampled mentions and engagement change over time, and test a second sentiment approach.
 
 ## Completed
 
-- [ ] Add completed Day 5 work
+- [x] Added a line chart for saved searches of the same topic, platform, and search window.
+- [x] Added mentions and engagement views, time-range controls, and a way to inspect individual saved checks.
+- [x] Tested Jev sentiment labels after some GPT labels appeared to miss the context of posts.
 
 ## Demo
 
-Add the link to the Day 5 post here.
+Watch the [Day 5 landscape demo](./Snowlax_Day5_Jev_And_Trends.mp4).
 
 ## Lessons
 
-Add the main lesson from Day 5 here.
+The chart compares saved snapshots, not every post on a platform. A search can also hit its selected post limit, so a flat line does not necessarily mean conversation volume stayed flat. AI labels from either model still need review against the original posts; this test does not establish that one model is always more accurate.

@@ -25,9 +25,9 @@ The goal is to create one simple place where people can search for a person, bra
 | 1 | Plan the dashboard and build the foundation | Complete |
 | 2 | Connect live public search | Complete |
 | 3 | Save searches and mentions | Complete |
-| 4 | Add sentiment analysis | Planned |
-| 5 | Build trend detection | Planned |
-| 6 | Complete the dashboard walkthrough | Planned |
+| 4 | Add sentiment analysis | Complete |
+| 5 | Build trend detection and test Jev | Complete |
+| 6 | Complete the dashboard walkthrough | Complete |
 | 7 | Review, improve, document, and release | Planned |
 
 Read the notes for each day in the [seven-day build log](./progress/README.md).
@@ -40,7 +40,7 @@ Read the notes for each day in the [seven-day build log](./progress/README.md).
 - AI-powered sentiment analysis
 - Local development with `npm run dev`
 
-Day 2 connected live public search. Day 3 added server-side Supabase storage for searches and mentions, so saved results can be reopened after a page refresh. The dashboard remains a local prototype; some later features in the code are still being tested. Additional platform integrations depend on their API access, pricing, and policies.
+Day 2 connected live public search. Day 3 added server-side Supabase storage for searches and mentions, so saved results can be reopened after a page refresh. Day 4 added sentiment labels. Day 5 added trend tracking from saved snapshots and a Jev sentiment test. Day 6 brought search controls, grouped results, AI model selection, conversation insights, and trends into one flow. The dashboard remains a local prototype; AI labels and summaries need human review, and additional platform integrations depend on their API access, pricing, and policies.
 
 ## Run the project locally
 
