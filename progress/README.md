@@ -9,6 +9,6 @@ This directory records the progress of the Snowlax Dashboard seven-day challenge
 - [Day 4 — Sentiment analysis](./day-4/README.md)
 - [Day 5 — Trend detection](./day-5/README.md)
 - [Day 6 — Dashboard walkthrough](./day-6/README.md)
-- [Day 7 — Review and release](./day-7/README.md)
+- [Final Day — Challenge review](./day-7/README.md)
 
 The application source code remains in `src`. These folders document what changed each day without duplicating the project.

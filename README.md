@@ -1,12 +1,12 @@
 # Snowlax Dashboard
 
-An open-source social listening dashboard being built in public over seven days.
+An open-source social listening dashboard built in public during a seven-day challenge.
 
 The goal is to create one simple place where people can search for a person, brand, product, or topic and understand the public conversation around it.
 
 > I am a beginner and I am sharing the progress, problems, and lessons from every day of the build. If you are learning too, you are welcome to follow the project, use the dashboard, and build along with me. Suggestions and contributions are welcome.
 
-## What the dashboard will do
+## Dashboard features
 
 - Search for public mentions of a name, brand, product, or topic
 - Let users choose a supported social platform
@@ -28,7 +28,7 @@ The goal is to create one simple place where people can search for a person, bra
 | 4 | Add sentiment analysis | Complete |
 | 5 | Build trend detection and test Jev | Complete |
 | 6 | Complete the dashboard walkthrough | Complete |
-| 7 | Review, improve, document, and release | Planned |
+| 7 | Review the challenge, share lessons, and plan improvements | Complete |
 
 Read the notes for each day in the [seven-day build log](./progress/README.md).
 
@@ -93,7 +93,13 @@ progress/         Daily challenge notes from Day 0 to Day 7
 
 ## Project status
 
-This is an educational seven-day prototype under active development. It is not yet production-ready, and platform availability may change according to third-party API rules.
+The seven-day challenge is complete. This is an educational prototype that will continue to improve. It is not yet production-ready, and platform availability may change according to third-party API rules.
+
+## Final-day recap
+
+Read the [final-day lessons and future improvements](./progress/day-7/README.md), including both versions of the final video. Planned improvements include UI/UX, open-source translation, live tracking, spike alerts, and a hot-topic leaderboard.
+
+> The challenge ends, but the learning never does.
 
 ## Contributing
 
