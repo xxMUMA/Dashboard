@@ -14,6 +14,7 @@ The goal is to create one simple place where people can search for a person, bra
 - Display the author, post, publication time, and engagement
 - Save searches and mentions for later review
 - Classify sentiment as positive, neutral, or negative
+- Translate individual posts into a selected language with GPT while keeping the original visible
 - Show how mentions, engagement, and sentiment change over time
 - Provide a responsive light and dark interface
 
@@ -71,7 +72,7 @@ On Windows PowerShell:
 Copy-Item .env.example .env.local
 ```
 
-Bluesky public search needs no API key. To save searches for Day 3, run [`supabase/schema.sql`](./supabase/schema.sql) in your Supabase project's SQL Editor, then set `SUPABASE_URL` and `SUPABASE_SECRET_KEY` in `.env.local`. These values are used only in server code. Add other credentials only for features you are testing. Never commit `.env.local` or share live API keys.
+Bluesky public search needs no API key. To save searches for Day 3, run [`supabase/schema.sql`](./supabase/schema.sql) in your Supabase project's SQL Editor, then set `SUPABASE_URL` and `SUPABASE_SECRET_KEY` in `.env.local`. These values are used only in server code. Add other credentials only for features you are testing. The post Translate button uses `OPENAI_API_KEY` through a server route, runs only when clicked, and caches each post and target language in the browser to avoid repeat requests. Never commit `.env.local` or share live API keys.
 
 ### 4. Start the development server
 

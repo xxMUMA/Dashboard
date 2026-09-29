@@ -1,8 +1,8 @@
 "use client";
 
 import { FormEvent, useCallback, useEffect, useMemo, useState } from "react";
-import Image from "next/image";
 import DashboardSidebar from "./DashboardSidebar";
+import PostCard from "./PostCard";
 import { modelInfo, sentimentModels, type SentimentModel } from "@/lib/sentiment-models";
 import { platformName, platformRegistry, type Platform, type SearchablePlatform } from "@/lib/platforms";
 
@@ -426,18 +426,7 @@ export default function Home() {
               <span>{groupVisible.length === group.posts.length ? `${group.posts.length} mentions` : `${groupVisible.length} of ${group.posts.length} shown`}</span>
             </div>
             {groupVisible.length === 0 ? <p className="platform-results-empty">No {filter} mentions from {group.label}.</p> :
-              <div className="post-grid">{groupVisible.map(post => (
-                <a className="post-card" href={post.url} target="_blank" rel="noreferrer" key={post.id}>
-                  <div className="author-row">
-                    {post.avatar ? <Image src={post.avatar} alt="" width={38} height={38} unoptimized /> : <span className="avatar-fallback">{post.author[0]}</span>}
-                    <div><strong>{post.author}</strong><span>@{post.handle}</span></div>
-                    <time>{new Intl.DateTimeFormat("en", { month: "short", day: "numeric" }).format(new Date(post.createdAt))}</time>
-                  </div>
-                  <p>{post.text}</p>
-                  <span className={`sentiment-badge ${post.sentiment || "unanalysed"}`}>{post.sentiment || "Unanalysed"}</span>
-                  <div className="engagement"><span>♡ {compact(post.likes)}</span><span>↻ {compact(post.reposts)}</span><span>◯ {compact(post.replies)}</span><span>❝ {compact(post.quotes)}</span></div>
-                </a>
-              ))}</div>}
+              <div className="post-grid">{groupVisible.map(post => <PostCard post={post} key={`${post.platform}-${post.id}-${post.text}`} />)}</div>}
           </section>;
         })}
       </section>}
